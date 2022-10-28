@@ -36,6 +36,8 @@ Then('the patient of the created order should have an identification with code {
   response_orc = @orl_o22_response_message.orc
 
   # Verify the glims db
+  ins_nir_id = Correspondent.first(crsp_internalId: string2)
+  expect(ins_nir_id).not_to be_nil
   order = Order.first(ord_shortId: response_orc.ORC_4_1_1)
   expect(order).not_to be_nil
   expect(order.ord_object).not_to be_nil
@@ -43,5 +45,6 @@ Then('the patient of the created order should have an identification with code {
   expect(order.objekt.obj_type).to eq(EnumObjectScope::PERSON)
   patient = order.objekt.person
   expect(patient.correspondent.assigned_to_identifications.length).to eq(2)
+  expect(patient.correspondent.assigned_to_identifications(idnt_code: string, idnt_source: ins_nir_id).length).to eq(1)
 end
 
