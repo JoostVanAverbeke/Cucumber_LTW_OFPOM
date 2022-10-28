@@ -19,7 +19,7 @@ end
 
 When('I send the HL7 OML O21 message') do
   @oml_o21_nw_message = Hl7MessageFactory.build(:oml_o21_message)
-  pid = hl7_message.getSegment(PidSegment.java_class)
+  pid = @oml_o21_nw_message.getSegment(PidSegment.java_class)
   pid.PID_3_2_1_1 = @id_number
   pid.PID_3_2_4_1 = @assigning_authority.namespace_id
   pid.PID_3_2_4_2 = @assigning_authority.universal_id
