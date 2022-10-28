@@ -32,6 +32,16 @@ When('I send the HL7 OML O21 message') do
 end
 
 Then('the patient of the created order should have an identification with code {string} assigned by {string}') do |string, string2|
-  pending # Write code here that turns the phrase above into concrete actions
+  # Verify the ORC segment of the response message
+  response_orc = @orl_o22_response_message.orc
+
+  # Verify the glims db
+  order = Order.first(ord_shortId: response_orc.ORC_4_1_1)
+  expect(order).not_to be_nil
+  expect(order.ord_object).not_to be_nil
+  # Validate the order relations at database level
+  expect(order.objekt.obj_type).to eq(EnumObjectScope::PERSON)
+  patient = order.objekt.person
+  expect(patient.correspondent.assigned_to_identifications.length).to eq(2)
 end
 
