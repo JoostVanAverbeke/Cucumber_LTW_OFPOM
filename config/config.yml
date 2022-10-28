@@ -1,0 +1,285 @@
+-
+  type: progress
+  version: '8.10'
+  database:
+    glims:
+      host: SilvioGlims8-10
+      port: 9806
+      name: glims
+    genrw:
+      host: SilvioGlims8-10
+      port: 9805
+      name: genrw
+  openedge:
+    version: 111 # or 113
+  appserver:
+    host: SilvioGlims8-10
+    name: Glims8_Silvio
+    port: 5162
+  server_interface:
+    host: SilvioGlims8-10
+    port: 9400
+    timeout: 60
+-
+  type: progress
+  version: 'dev'
+  database:
+    glims:
+      host: SilvioGlims-dev
+      port: 2512
+      name: glims
+    genrw:
+      host: SilvioGlims-dev
+      port: 2511
+      name: genrw
+  openedge:
+    version: 111
+  appserver:
+    host: SilvioGlims-dev
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: SilvioGlims-dev
+    port: 9400
+    timeout: 60
+-
+  type: progress
+  version: '8.11'
+  database:
+    glims:
+      host: SilvioGlims8-11
+      port: 15000
+      name: glims
+    genrw:
+      host: SilvioGlims8-11
+      port: 15002
+      name: genrw
+    genro:
+      host: SilvioGlims8-11
+      port: 15001
+      name: genro
+  openedge:
+    version: 111 # or 113
+  appserver:
+    host: SilvioGlims8-11
+    name: Glims8_Silvio
+    port: 5162
+  server_interface:
+    host: SilvioGlims8-11
+    port: 9878
+    timeout: 60
+-
+  type: progress
+  version: '9.1'
+  database:
+    glims:
+      host: SilvioGlims9-1
+      port: 2512
+      name: glims
+    genrw:
+      host: SilvioGlims9-1
+      port: 2511
+      name: genrw
+  openedge:
+    version: 111
+  appserver:
+    host: SilvioGlims9-1
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: SilvioGlims9-1
+    port: 9400
+    timeout: 60
+-
+  type: progress
+  version: '9.3'
+  database:
+    glims:
+      host: SilvioGlims9-3
+      port: 2512
+      name: glims
+    genrw:
+      host: SilvioGlims9-3
+      port: 2511
+      name: genrw
+  openedge:
+    version: 111
+  appserver:
+    host: SilvioGlims9-3
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: SilvioGlims9-3
+    port: 9400
+    timeout: 60
+-
+  type: progress
+  version: '9.4'
+  database:
+    glims:
+      host: SilvioGlims9-4
+      port: 2512
+      name: glims
+    genrw:
+      host: SilvioGlims9-4
+      port: 2511
+      name: genrw
+  openedge:
+    version: 111
+  appserver:
+    host: SilvioGlims9-4
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: SilvioGlims9-4
+    port: 9400
+    timeout: 60
+-
+  type: progress
+  version: '9.5'
+  database:
+    glims:
+      host: SilvioGlims9-5
+      port: 2512
+      name: glims
+    genrw:
+      host: SilvioGlims9-5
+      port: 2511
+      name: genrw
+    genro:
+      host: SilvioGlims9-5
+      port: 2510
+      name: genro
+  openedge:
+    version: 111
+  appserver:
+    host: SilvioGlims9-5
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: SilvioGlims9-5
+    port: 9400
+    timeout: 60
+-
+  type: progress
+  version: '8.8'
+  database:
+    glims:
+      host: SilvioGlims8-7
+      port: 9806
+      name: glims
+    genrw:
+      host: SilvioGlims8-7
+      port: 9805
+      name: genrw
+  openedge:
+    version: 111 # or 113
+  appserver:
+    host: SilvioGlims8-7
+    name: Glims8_Silvio
+    port: 5162
+  server_interface:
+    host: SilvioGlims8-7
+    port: 9400
+    timeout: 60
+-
+  type: oracle
+  version: '9.3'
+  database:
+    glims:
+      host: Silvioglimsora9-3
+      port: 1521
+      name: glims
+    genrw:
+      host: SilvioGlims9-3
+      port: 2511
+      name: genrw
+  openedge:
+    version: 111
+  appserver:
+    host: Silvioglimsora9-3
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: Silvioglimsora9-3
+    port: 9400
+    timeout: 60
+-
+  type: progress
+  version: '9.8'
+  database:
+    glims:
+      host: Silviohis-gl98
+      port: 15001
+      name: glims
+    genrw:
+      host: Silviohis-gl98
+      port: 15000
+      name: genrw
+    genro:
+      host: Silviohis-gl98
+      port: 15002
+      name: genro
+  openedge:
+    version: 111
+  appserver:
+    host: Silviohis-gl98
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: Silviohis-gl98
+    port: 9400
+    timeout: 60
+-
+  type: progress
+  version: '9.6'
+  database:
+    glims:
+      host: SilvioGlims9-6-his
+      port: 6052
+      name: glims
+    genrw:
+      host: SilvioGlims9-6-his
+      port: 6051
+      name: genrw
+    genro:
+      host: SilvioGlims9-6-his
+      port: 6053
+      name: genro
+  openedge:
+    version: 111
+  appserver:
+    host: SilvioGlims9-6-his
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: SilvioGlims9-6-his
+    port: 9400
+    timeout: 60
+-
+  type: progress
+  version: '9.9'
+  database:
+    glims:
+      host: silviohis-venus
+      port: 15001
+      name: glims
+    genrw:
+      host: silviohis-venus
+      port: 15000
+      name: genrw
+    genro:
+      host: silviohis-venus
+      port: 15002
+      name: genro
+  openedge:
+    version: 111
+  appserver:
+    host: silviohis-venus
+    name: Glims9
+    port: 4099
+  server_interface:
+    host: silviohis-venus
+    port: 9400
+    timeout: 60
+

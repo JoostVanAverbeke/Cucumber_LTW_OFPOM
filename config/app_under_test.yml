@@ -1,0 +1,4 @@
+---
+application_under_test: progress_9.8
+logging_level: DEBUG
+translator_mllp_port: 6060
