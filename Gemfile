@@ -7,6 +7,7 @@ gem 'public_suffix', '~> 3.1', '>= 3.1.1'
 gem "factory_girl", "~> 4.2.0"
 #
 gem 'minitest', '5.10.3'
+
 # # Faker, a port of Data::Faker from Perl,
 # # is used to easily generate fake data: names, addresses, phone numbers, etc.
 gem "faker", "~> 1.8.0"
@@ -19,6 +20,7 @@ gem 'silvio_hl7_factory', git: 'https://git.mips.be:8443/r/HIS/Silvio_hl7_factor
 
 # # Randomizer, a tool for generating random stuff...
 gem "factory_randomizer", "~> 0.1.0"
-#
-gem 'cucumber', '~> 4.0'
+
+# Higher versions of cucumber are not supported by jruby, due to jruby-win32ole !!!
+gem 'cucumber', '3.2.0'
 gem 'rspec', '~> 3.5.0'
